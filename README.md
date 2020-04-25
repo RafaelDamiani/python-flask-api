@@ -8,4 +8,4 @@ Install Python from https://www.python.org/downloads/
 Run the command `pip3 install Flask`
 
 ## Run the project
-To run the project, type `python app.py` in the command line
+To run the project, type `python app.py` on the command line
