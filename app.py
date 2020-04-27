@@ -91,6 +91,21 @@ def update_book(isbn):
     response.headers['Location'] = "/books/" + str(isbn)
     return response
 
+@app.route('/books/<int:isbn>', methods=['DELETE'])
+def delete_book(isbn):
+    i = 0
+    for book in books:
+        if book['isbn'] == isbn:
+            books.pop(i)
+            response = Response("", status=204)
+            return response
+        i += 1
+    invalidBookObjecterrorMsg = {
+        "error": "Book with the ISBN number that was provided was not found."
+    }
+    response = Response(json.dumps(invalidBookObjecterrorMsg), status=404, mimetype="application/json")
+    return response
+
 def validBookObject(bookObject):
     if ("name" in bookObject and "price" in bookObject and "isbn" in bookObject):
         return True
