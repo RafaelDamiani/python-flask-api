@@ -13,7 +13,7 @@ Run the command `pip3 install Flask`
 ## Run the project
 To run the project, type `python app.py` on the command line
 
-## Some Issue in development?
+## Some Issue on development?
 Problem: _Instance of 'SQLAlchemy' has no 'Column' memberpylint(no-member)_  
 Solution:
 	
