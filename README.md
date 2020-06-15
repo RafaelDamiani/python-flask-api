@@ -1,5 +1,5 @@
 # python-flask-api
-A small API using Python Programming Language and Flask Framework
+A API using Python Programming Language and Flask Framework
 
 ## Install Python
 Install Python from https://www.python.org/downloads/
